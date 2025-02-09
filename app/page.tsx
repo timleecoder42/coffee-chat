@@ -79,14 +79,15 @@ const FoodMessage = () => (
     <div className="relative w-full h-48 rounded-lg overflow-hidden">
       <Image
         src="https://i.imgur.com/vZhJBtk.jpeg"
-        alt="Delicious Pasta"
+        alt="Specialty Coffee"
         fill
         className="object-cover"
       />
     </div>
     <p className="text-sm">
-      Our chef's special pasta dish is a perfect blend of flavors. Enjoy this
-      gourmet meal for only $14.99!
+      Our Hand-Crafted Ethiopian Yirgacheffe, single-origin beans roasted to
+      bring out delicate floral and citrus notes. Experience this premium brew
+      for only $4.99!
     </p>
   </div>
 );
@@ -107,7 +108,7 @@ const InvoiceMessage = ({ data, onPay, onPaymentSuccess }) => {
         <div className="relative w-20 h-20 rounded-xl overflow-hidden">
           <Image
             src="https://i.imgur.com/vZhJBtk.jpeg"
-            alt="Chef's Special Pasta"
+            alt="Specialty Coffee"
             fill
             className="object-cover"
           />
@@ -245,10 +246,10 @@ export default function ChatToSuccess() {
         {
           id: Date.now() + 1,
           text: JSON.stringify({
-            item: "Chef's Special Pasta",
-            price: 14.99,
-            discount: 3.0,
-            total: 11.99,
+            item: 'Hand-Crafted Ethiopian Yirgacheffe',
+            price: 4.99,
+            discount: 1.0,
+            total: 3.99,
           }),
           isBot: true,
           isInvoice: true,
